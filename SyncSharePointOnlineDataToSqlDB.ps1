@@ -1,3 +1,9 @@
+########## 
+
+# Syn the Sharepoint List items data to SQL database
+
+##########
+
 Add-PSSnapin Microsoft.SharePoint.PowerShell -ErrorAction SilentlyContinue
 Add-Type -Path "C:\Program Files\SharePoint Online Management Shell\Microsoft.Online.SharePoint.PowerShell\Microsoft.SharePoint.Client.dll" 
 Add-Type -Path "C:\Program Files\SharePoint Online Management Shell\Microsoft.Online.SharePoint.PowerShell\Microsoft.SharePoint.Client.Runtime.dll" 
@@ -43,7 +49,7 @@ function SyncListItems(){
 		Title = $title";
 
 		#SQL command to execute
-		$commandText = "UPDATE Table SET 
+		$commandText = "UPDATE [Table] SET 
 		id = @id,
 		title = @title,
 		WHERE id = @id"

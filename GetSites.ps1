@@ -1,3 +1,10 @@
+########## 
+
+# This script gets all the site and subsites from a site collection then
+# saves each Site Title and URL of the site into a CSV file.
+
+##########
+
 #Load SharePoint CSOM Assemblies
 Add-Type -Path "C:\Program Files\SharePoint Online Management Shell\Microsoft.Online.SharePoint.PowerShell\Microsoft.SharePoint.Client.dll" 
 Add-Type -Path "C:\Program Files\SharePoint Online Management Shell\Microsoft.Online.SharePoint.PowerShell\Microsoft.SharePoint.Client.Runtime.dll" 

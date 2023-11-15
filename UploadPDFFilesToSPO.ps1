@@ -1,3 +1,9 @@
+########## 
+
+# This script uploads pdf files from your computer.
+
+##########
+
 # Set the variables
 $fileDirectory = Read-Host "Enter File Directory "
 
